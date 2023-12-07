@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    width:97vw;
+    height:98vh;
+    font-family:monospace;
+    background-color:antiquewhite;
+}
+nav{
+    margin:auto;
+}
+.logo{
+    display: inline-block;
+    width:50px;
+    height:50px;
+   
+}
+.header li{
+    list-style-type:none;
+    color:white;
+    /* border:2px solid green; */
+    cursor: pointer;
+    margin:0px 50px;
+}
+.header{
+    height:50px;
+    background: black;
+    display:flex;
+    align-items:center;
+}
+
+li.brand{
+    position: relative;
+    
+     }
+.text{
+    position: absolute;
+    top:30%;
+    } 
+.container{
+    width:70%;
+    height:78%;
+    background:rgba(0, 0, 0, 0.452);
+    margin:10px auto;
+    background:url("background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:right;
+    padding:10px 10px;
+    overflow-y:auto;
+    /* overflow-x: hidden; */
+
+}
+.container::-webkit-scrollbar{
+    display:none;
+}
+.text-heading{
+    font-weight:bold;
+    font-size:1.4rem;
+    color:grey;
+    padding-bottom:10px;
+    }
+.singer-img{
+    width:50px;
+    height:50px;
+    border:2px;
+    border-radius:50%;
+}
+.song-item{
+    width:80%;
+    height:70px;
+    padding:10px;
+    margin-bottom:20px;
+    border:2px solid white;
+    border-radius:15px;
+    background: white;
+    color:black;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.time-stamp{
+    margin:0px 10px;
+    display: inline-block;
+    padding:5px;
+}
+
+.bottom img{
+    height:30px;
+}
+.bottom{
+    height:110px;
+    color:wheat;
+    position:sticky;
+    background-color:black;
+
+    }
+.bottom input{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:40%;
+    margin-top:10px;
+}
+.singer-info{
+    position:absolute;
+    width:80%;
+    top:45%;
+    display:flex;
+    align-items:center;
+    
+}
+span.play-buttons i{
+    margin:4px;
+
+}
+
+.singer-info img,.singer-info span{
+    margin:0px 40px;
+}
+.bottom img{
+    opacity:0;
+}
+i{
+    cursor:pointer;
+}
+
+.bottom img.show{
+    opacity: 1;
+    transition:opacity 1s ease-in-out;
+}
